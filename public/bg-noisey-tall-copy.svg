@@ -6,7 +6,14 @@
     <mask id="outside-window" maskUnits="userSpaceOnUse" x="0" y="0" width="1728" height="930">
       <rect width="1728" height="930" fill="white" />
       <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
-        transform="matrix(0.501255 0.865299 -0.754765 0.655995 2136.06 -524)" fill="black" />
+        transform="matrix(0.501255 0.865299 -0.754765 0.655995 2186.06 -548)" fill="black" />
+    </mask>
+    <mask id="tapered-band" maskUnits="userSpaceOnUse" x="0" y="0" width="1728" height="930">
+      <rect width="1728" height="930" fill="black" />
+      <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
+        transform="matrix(0.501255 0.865299 -0.754765 0.655995 2136.06 -524)" fill="white" />
+      <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
+        transform="matrix(0.501255 0.865299 -0.754765 0.655995 2186.06 -548)" fill="black" />
     </mask>
     <filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
       <feTurbulence
@@ -32,8 +39,6 @@
   </defs>
   <g clip-path="url(#hero-clip)">
     <rect width="1728" height="930" fill="#7A7F6A" filter="url(#grain)" mask="url(#outside-window)" />
-    <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
-      transform="matrix(0.501255 0.865299 -0.754765 0.655995 2136.06 -524)"
-      fill="none" stroke="#F4EFE6" stroke-width="42" />
+    <rect width="1728" height="930" fill="#F4EFE6" mask="url(#tapered-band)" />
   </g>
 </svg>

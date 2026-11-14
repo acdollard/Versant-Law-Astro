@@ -394,7 +394,7 @@ textarea:focus-visible {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
 }
 
 
@@ -1185,12 +1185,12 @@ textarea:focus-visible {
   font-weight: 500;
   letter-spacing: 0.06em;
   margin-bottom: 48px;
-
+  transition: color 0.25s ease-in-out;
 }
 
 .footer-nav a:hover,
 .footer-contact a:hover {
-  opacity: 0.8;
+  color: var(--color-pink-dark);
 }
 
 .footer-contact {
