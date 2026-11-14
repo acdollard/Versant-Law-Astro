@@ -478,7 +478,7 @@ textarea:focus-visible {
 
 .hero-copy .lede {
   margin-top: clamp(20px, 3vw, 40px);
-  line-height: 1.5;
+  line-height: 1.25;
 }
 
 .hero-copy .button {
