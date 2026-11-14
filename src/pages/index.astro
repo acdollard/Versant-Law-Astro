@@ -1,16 +1,343 @@
 ---
+import Layout from "../layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+
+<Layout>
+	<main id="top">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="hero-stage">
+				<picture>
+					<source
+						media="(max-width: 1100px)"
+						srcset="/bg-green-noisey.svg"
+					/>
+					<img
+						class="hero-graphic"
+						src="/bg-noisey-tall-copy.svg"
+						alt=""
+						width="1728"
+						height="930"
+					/>
+				</picture>
+				<div class="hero-content">
+					<div class="hero-copy">
+						<p class="eyebrow">
+							San Fransisco Business &amp; Real Estate Attorney
+						</p>
+						<h1 id="hero-title">
+							<span class="line">Creative Legal Solutions</span>
+							<span class="line">for Bay Area Businesses</span>
+							<span class="line">and Real Estate Firms</span>
+						</h1>
+						<p class="lede">
+							Creative, practical solutions to complex legal problems for
+							business owners and real estate firms across the San Fransisco
+							Bay Area.
+						</p>
+						<a class="button" href="#contact">
+							Schedule a Consultation
+							<img
+								src="/arrow-right.svg"
+								alt=""
+								width="14"
+								height="14"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-image-wrapper">
+				<img
+					class="hero-bridge"
+					src="/golden-gate_cropped.jpeg"
+					alt=""
+					width="5548"
+					height="3121"
+				/>
+			</div>
+		</section>
+
+		<section class="practice" id="services" aria-labelledby="practice-title">
+			<div class="section-heading">
+				<h2 id="practice-title" class="ruled-title">Services</h2>
+				<p>
+					Practical legal counsel for commercial real estate and business
+					transactions across San Francisco and the Bay Area.
+				</p>
+			</div>
+			<div class="practice-grid">
+				<article class="practice-card">
+					<h3>Commercial Real Estate Acquisitions &amp; Sales</h3>
+					<p>
+						Purchase and sale agreements, due diligence, title review, and
+						closing.
+					</p>
+				</article>
+				<article class="practice-card">
+					<h3>Real Estate Exchanges</h3>
+					<p>Structuring tax-deferred exchanges and other property swaps.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Commercial Leasing, Landlord &amp; Tenant Representation</h3>
+					<p>
+						Office, retail, and industrial lease drafting and negotiation.
+					</p>
+				</article>
+				<article class="practice-card">
+					<h3>Lease Restructurings &amp; Workouts</h3>
+					<p>Amendments, renegotiations, and early terminations.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Green Leasing &amp; Building Efficiency</h3>
+					<p>Sustainability provisions in leases and buildings.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Construction Contracts &amp; Disputes</h3>
+					<p>Drafting, negotiating, and resolving project disputes.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Loan Workouts &amp; Debt Acquisitions</h3>
+					<p>Restructuring distressed loans and acquiring debt positions.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Real Estate &amp; Business Investments</h3>
+					<p>Structuring investments and negotiating deal terms.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Entity Formation &amp; Structuring</h3>
+					<p>LLCs, partnerships, and corporations.</p>
+				</article>
+				<article class="practice-card">
+					<h3>Venture Formation &amp; Capitalization</h3>
+					<p>
+						Joint ventures, private equity and investor capital raises, and
+						start-up financing.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="about" id="about" aria-labelledby="about-title">
+			<div class="about-layout">
+				<figure class="portrait">
+					<img
+						src="/founder.png"
+						alt="Alexander Hamilton, founder of Versant Law"
+						width="800"
+						height="800"
+					/>
+					<figcaption>Alexander Hamilton, Founder</figcaption>
+				</figure>
+				<div class="about-card">
+					<h2 id="about-title">Who <span>We</span> Are</h2>
+					<span class="accent-rule" aria-hidden="true"></span>
+					<div class="about-copy">
+						<p>
+							Alex Hamilton is a San Francisco transactional law and
+							commercial real estate practice serving property owners,
+							investors, landlords, tenants, and growing businesses. Clients
+							come to him to buy, sell, lease, finance, and build, and to
+							structure the entities and capital behind those deals. He
+							negotiates commercial leases, guide acquisitions and sales
+							through due diligence and closing, restructure troubled loans
+							and leases, and form and capitalize new ventures.<br />
+							<br />
+							Mr. Hamilton's background in accounting as well as law means he
+							looks closely at the numbers behind every agreement. The result
+							is practical, business-minded counsel that keeps deals moving
+							and protects value across the Bay Area and Northern California.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section
+			class="publications"
+			id="publications"
+			aria-labelledby="publications-title"
+		>
+			<img
+				class="bg-vector"
+				src="/bg-vector.svg"
+				alt=""
+				width="1165"
+				height="1104"
+			/>
+			<div class="publications-inner">
+				<h2 id="publications-title">Publications</h2>
+				<span class="accent-rule accent-rule-long" aria-hidden="true"></span>
+				<div class="publication-list">
+					<article class="publication-card">
+						<figure class="publication-cover"></figure>
+						<div class="publication-copy">
+							<p class="case-tag">Thomson Reuters</p>
+							<h3>
+								Miller and Starr California Real Estate Forms, 2026–2027 ed.
+							</h3>
+							<span class="case-bar" aria-hidden="true"></span>
+							<p>
+								A seven-volume guide to drafting and negotiating commercial
+								real estate and construction contracts. It is part of the
+								Miller &amp; Starr family of California real property
+								resources and is widely used by attorneys, brokers,
+								developers, and other real estate professionals.
+							</p>
+							<a
+								class="text-link"
+								href="https://store.legal.thomsonreuters.com/en-us/products/miller-and-starr-california-real-estate-forms-43372763"
+								target="_blank"
+								rel="noopener noreferrer"
+								>View on Thomson Reuters
+								<img
+									src="/arrow-right-dark.svg"
+									alt=""
+									width="16"
+									height="16"
+							/></a>
+						</div>
+					</article>
+					<article class="publication-card">
+						<figure class="publication-cover"></figure>
+						<div class="publication-copy">
+							<p class="case-tag">California Real Property Journal</p>
+							<h3>“Green Leasing in a Red Economy”</h3>
+							<span class="case-bar" aria-hidden="true"></span>
+							<p>Lead author.</p>
+						</div>
+					</article>
+					<article class="publication-card">
+						<figure class="publication-cover"></figure>
+						<div class="publication-copy">
+							<p class="case-tag">ALI-ABA/AECRE</p>
+							<h3>Lease Negotiation Handbook</h3>
+							<span class="case-bar" aria-hidden="true"></span>
+							<p>Contributing author.</p>
+						</div>
+					</article>
+					<article class="publication-card">
+						<figure class="publication-cover"></figure>
+						<div class="publication-copy">
+							<p class="case-tag">Lexis Practice Advisor</p>
+							<h3>
+								Due Diligence and Title Insurance in Real Estate Purchase and
+								Sale Transactions
+							</h3>
+							<span class="case-bar" aria-hidden="true"></span>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact" aria-labelledby="contact-title">
+			<svg class="grain" aria-hidden="true">
+				<rect width="100%" height="100%" filter="url(#grain)" />
+			</svg>
+			<div class="contact-layout">
+				<form
+					class="intake"
+					method="POST"
+					data-netlify="true"
+					name="intake-form"
+				>
+					<input type="hidden" name="form-name" value="intake-form" />
+					<p class="intake-success" tabindex="-1" role="status">
+						Thank you! We have received your submission.
+					</p>
+					<p class="intake-error" role="alert" hidden>
+						We could not send that. Please try again, or call the office.
+					</p>
+					<h2>Start Your Confidential Intake</h2>
+					<p class="intake-note">
+						Please provide brief details aout your corporate or property legal
+						matter.
+					</p>
+					<div class="field-row">
+						<label>
+							First Name
+							<input
+								type="text"
+								name="first-name"
+								autocomplete="given-name"
+								placeholder="Elizabeth"
+								required
+							/>
+						</label>
+						<label>
+							Last Name
+							<input
+								type="text"
+								name="last-name"
+								autocomplete="family-name"
+								placeholder="Schuyler"
+								required
+							/>
+						</label>
+					</div>
+					<div class="field-row">
+						<label>
+							Email Address
+							<input
+								type="email"
+								name="email"
+								autocomplete="email"
+								placeholder="elizabeth@firm.com"
+								required
+							/>
+						</label>
+						<label>
+							Phone Number
+							<input
+								type="tel"
+								name="phone"
+								autocomplete="tel"
+								placeholder="(415) 555-0199"
+							/>
+						</label>
+					</div>
+					<label>
+						Message
+						<textarea
+							name="message"
+							rows="5"
+							placeholder="Tell us about your project, contract, transaction, or dispute. Please avoid sending highly sensitive or secret information at this preliminary stage."
+						></textarea>
+					</label>
+					<button class="button button-wide" type="submit">
+						Book Preliminary Consultation
+						<img
+							src="/arrow-right-form.svg"
+							alt=""
+							width="16"
+							height="16"
+						/>
+					</button>
+					<p class="disclaimer">
+						<img src="/icon-info.svg" alt="" width="16" height="16" />
+						<span
+							><strong>Disclaimer:</strong> Submission of this contact request
+							does not constitute or establish an attorney-client
+							relationship. Please do not submit confidential information
+							until formal representation is established in writing.</span
+						>
+					</p>
+				</form>
+				<aside class="contact-intro">
+					<h2 id="contact-title">Get Started Today</h2>
+					<span class="accent-rule" aria-hidden="true"></span>
+					<p>
+						If you’d like to reach out and tell us about the particular legal
+						challenges or issues you’re facing, we’re more than happy to
+						listen.
+					</p>
+					<p>
+						Feel free to call our office, or fill out this form and someone
+						from our team will reach out shortly.
+					</p>
+				</aside>
+			</div>
+		</section>
+	</main>
+</Layout>

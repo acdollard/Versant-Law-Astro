@@ -1,0 +1,33 @@
+<svg width="1728" height="518" viewBox="0 0 1728 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_73_824)">
+    <rect width="1728" height="930" fill="#7A7F6A" filter="url(#grain)" />
+    <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
+      transform="matrix(0.501255 0.865299 -0.754765 0.655995 2136.06 -524)" fill="#F4EFE6" />
+    <ellipse cx="891.519" cy="1004.32" rx="891.519" ry="1004.32"
+      transform="matrix(0.501255 0.865299 -0.754765 0.655995 2186.06 -548)" fill="#C2B09A"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_73_824">
+      <rect width="1728" height="518" fill="white" />
+    </clipPath>
+    <filter id="grain">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.7"
+        numOctaves="3"
+        stitchTiles="stitch"
+        seed="2401"
+      />
+      <feColorMatrix type="luminanceToAlpha" result="alphaNoise" />
+      <feComponentTransfer in="alphaNoise" result="specks">
+        <feFuncA
+          type="discrete"
+          tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+        />
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0, 0, 0, 0.18)" result="flood" />
+      <feComposite in="flood" in2="specks" operator="in" />
+    </filter>
+  </defs>
+</svg>

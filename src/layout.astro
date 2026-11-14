@@ -1,0 +1,163 @@
+---
+import "../styles.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Versant Law | Bay Area Business &amp; Real Estate Attorney</title>
+    <meta
+      name="description"
+      content="Creative, practical legal solutions for business owners and real estate firms across the San Francisco Bay Area."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/square-logo.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true" focusable="false">
+      <filter
+        id="grain"
+        x="0"
+        y="0"
+        width="100%"
+        height="100%"
+        color-interpolation-filters="sRGB"
+      >
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.7"
+          numOctaves="3"
+          stitchTiles="stitch"
+          seed="2401"
+        />
+        <feColorMatrix type="luminanceToAlpha" result="alphaNoise" />
+        <feComponentTransfer in="alphaNoise" result="specks">
+          <feFuncA
+            type="discrete"
+            tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+          />
+        </feComponentTransfer>
+        <feFlood flood-color="rgba(0, 0, 0, 0.18)" result="flood" />
+        <feComposite in="flood" in2="specks" operator="in" />
+      </filter>
+    </svg>
+    <header class="site-header">
+      <a class="logo" href="/">
+        <img src="/logo_2.svg" alt="Versant Law" width="215" />
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-burger" for="nav-toggle">
+        <span class="sr-only">Menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-cluster">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="/services">Services</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+        <div class="header-cta">
+          <a class="header-phone" href="tel:+14156279145">(415) 627-9145</a>
+          <a class="button" href="/contact">
+            Schedule a Consultation
+            <img src="/arrow-right.svg" alt="" width="14" height="14" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <slot />
+    <footer class="footer footer-home">
+      <img
+        class="bg-vector"
+        src="/bg-vector.svg"
+        alt=""
+        width="1165"
+        height="1104"
+      />
+      <div class="footer-container">
+        <div class="footer-inner">
+          <div class="footer-column">
+            <div class="footer-details">
+              <nav class="footer-nav" aria-label="Footer">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/services">Services</a>
+              </nav>
+              <div class="footer-contact">
+                <a class="footer-contact-title" href="/contact"
+                  >Contact Us</a
+                >
+                <div class="footer-row">
+                  <span class="icon-box">
+                    <img
+                      src="/icon-pin.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </span>
+                  <p>
+                    <strong>100 Pine Street ste 1250</strong>
+                    <span>San Fransisco, 04111</span>
+                  </p>
+                </div>
+                <div class="footer-row">
+                  <span class="icon-box">
+                    <img
+                      src="/icon-phone.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </span>
+                  <p><a href="tel:+14156279145">(415) 627-9145</a></p>
+                </div>
+                <div class="footer-social">
+                  <a
+                    class="icon-box"
+                    href="https://www.linkedin.com/in/alexanderehamilton/"
+                    aria-label="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icon-linkedin.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                  <a
+                    class="icon-box"
+                    href="https://x.com/VersantLawGroup"
+                    aria-label="X"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icon-x.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-wordmark">Versant Law</p>
+      </div>
+    </footer>
+	</body>
+</html>

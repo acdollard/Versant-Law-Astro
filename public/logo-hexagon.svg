@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="103.178" height="92.4297" viewBox="0 0 103.178 92.4297" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Hexagon Icon">
+<g id="Polygon Fill">
+</g>
+<path id="Line - Top" d="M46.0731 45.9505V1.73568" stroke-width="2" stroke-linecap="round" stroke="#7A7F6A"/>
+<path id="Line - Lower Right" d="M46.4773 46.5845L84.7685 68.692" stroke-width="2" stroke-linecap="round" stroke="#7A7F6A"/>
+<path id="Line - Lower Left" d="M45.8488 46.4773L7.55764 68.5848" stroke-width="2" stroke-linecap="round" stroke="#7A7F6A"/>
+<path id="Line - Bottom" d="M46.1113 46.2148V92.4297" stroke-width="2" stroke="#3A3A3A"/>
+<path id="Line - Upper Right" d="M45.7125 47.3067L85.1737 24.3795" stroke-width="2" stroke="#3A3A3A"/>
+<path id="Line - Upper Left" d="M45.8994 46.8962L7.45382 24.71" stroke-width="2" stroke="#3A3A3A"/>
+<mask id="stroke0_0_4" fill="white">
+<path d="M46.2148 0L86.2381 23.1074V69.3223L46.2148 92.4297L6.19162 69.3223V23.1074L46.2148 0Z"/>
+</mask>
+<path id="Polygon Stroke" d="M46.2148 0L86.2381 23.1074V69.3223L46.2148 92.4297L6.19162 69.3223V23.1074L46.2148 0Z" stroke-width="8" stroke="#3A3A3A" mask="url(#stroke0_0_4)"/>
+</g>
+</svg>

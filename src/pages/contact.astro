@@ -1,0 +1,136 @@
+---
+
+import Layout from "../layout.astro";   
+---
+
+<Layout>
+
+  <main>
+    <section class="page-hero" aria-labelledby="contact-title">
+      <div class="page-hero-copy">
+        <h1 id="contact-title">Get Started Today</h1>
+      </div>
+    </section>
+
+    <section class="contact" id="intake">
+      <div class="contact-layout">
+        <form
+          class="intake"
+          method="POST"
+          data-netlify="true"
+          name="intake-form"
+        >
+          <input type="hidden" name="form-name" value="intake-form" />
+          <p class="intake-success" tabindex="-1" role="status">
+            Thank you! We have received your submission.
+          </p>
+          <p class="intake-error" role="alert" hidden>
+            We could not send that. Please try again, or call the office.
+          </p>
+          <h2>Start Your Confidential Intake</h2>
+          <p class="intake-note">
+            Please provide brief details aout your corporate or property legal
+            matter.
+          </p>
+          <div class="field-row">
+            <label>
+              First Name
+              <input
+                type="text"
+                name="first-name"
+                autocomplete="given-name"
+                placeholder="Elizabeth"
+                required
+              />
+            </label>
+            <label>
+              Last Name
+              <input
+                type="text"
+                name="last-name"
+                autocomplete="family-name"
+                placeholder="Schuyler"
+                required
+              />
+            </label>
+          </div>
+          <div class="field-row">
+            <label>
+              Email Address
+              <input
+                type="email"
+                name="email"
+                autocomplete="email"
+                placeholder="elizabeth@firm.com"
+                required
+              />
+            </label>
+            <label>
+              Phone Number
+              <input
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+                placeholder="(415) 555-0199"
+              />
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us about your project, contract, transaction, or dispute. Please avoid sending highly sensitive or secret information at this preliminary stage."
+            ></textarea>
+          </label>
+          <button class="button button-wide" type="submit">
+            Book Preliminary Consultation
+            <img
+              src="/arrow-right-form.svg"
+              alt=""
+              width="16"
+              height="16"
+            />
+          </button>
+          <p class="disclaimer">
+            <img src="/icon-info.svg" alt="" width="16" height="16" />
+            <span
+              ><strong>Disclaimer:</strong> Submission of this contact request
+              does not constitute or establish an attorney-client
+              relationship. Please do not submit confidential information
+              until formal representation is established in writing.</span
+            >
+          </p>
+        </form>
+        <aside class="contact-intro">
+          <p>
+            If you’d like to reach out and tell us about the particular legal
+            challenges or issues you’re facing, we’re more than happy to
+            listen.
+          </p>
+          <p>
+            Feel free to call our office, or fill out this form and someone
+            from our team will reach out shortly.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page-band" aria-label="Office details">
+      <div class="visit-grid">
+        <article class="visit-card">
+          <h2>Office</h2>
+          <p>100 Pine Street ste 1250<br />San Fransisco, 04111</p>
+        </article>
+        <article class="visit-card">
+          <h2>Phone</h2>
+          <p><a href="tel:+14156279145">(415) 627-9145</a></p>
+          <p>
+            Ask for a preliminary consultation. Please keep the first
+            conversation general until representation is confirmed in writing.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+</Layout>
